@@ -1,0 +1,141 @@
+\documentclass[11pt]{article}
+
+%减少左右空白边缘
+%\usepackage{fullpage}
+\usepackage[left=1.3in, right=1.3in, top=1.3in, bottom=1.3in]{geometry}
+%插入图像 .jpg .png .pdf
+\usepackage{graphicx}
+%支持中文
+\usepackage[UTF8, heading = false, scheme = plain]{ctex}  
+% 页眉页脚
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\slshape Left Title}
+\fancyhead[R]{\slshape Right Title}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+%目录
+\tableofcontents
+%标题
+\title{软件工程课程报告}
+\author{galen}
+\date{\today}
+\maketitle
+
+
+\section{用例与需求分析}
+	\subsection{参与者}
+	一共有三类参与者: 酒店合作伙伴(Partner), 管理员(Administrator), 以及顾客(User)
+	\subsection{酒店合作伙伴 Partner}
+		
+	\subsection{管理员 Administrator}
+		
+	\subsection{顾客 User}
+		针对普通用户, booking 网站提供了注册登录, 酒店搜索和预订, 评论, 设置等功能
+		\subsubsection{注册登录}
+		booking 提供的注册功能可以让游客注册成为用户，用户可以用已有账号登录，微信登录，或绑定其他的社交账号，例如 Google，Facebook 等。
+		\subsubsection{查看推送}
+		booking 会根据热门的旅游主题，旅游地点，优惠折扣，用户所在地等推荐相关的酒店，并且提供详细的酒店信息。用户可以随时查看最热门的推送消息，选择合适的酒店。
+		\subsubsection{酒店搜索}
+		booking 提供的搜索功能可以根据目的地、住宿名称或地址，针对住宿时间、出行类别、客房数量、随行人数等查询有空余房间的符合条件的酒店。booking 非常贴心的根据全球驴友的出行记录和喜好为用户提供了根据旅行关键词和地点搜索受欢迎的酒店。在通过目的地搜索时，用户可以选择使用地图浏览模式，更直观便捷。搜索完成后，booking 系统优先显示热门推荐酒店和网友推荐旅行主题，用户可以选择按价格、评分、距离市中心远近、星级等进行排序。并且可以通过一些筛选类别来缩小搜索范围，筛选类别有：每晚房价、热门筛选、住宿房量、住宿评级、住处类型、设施、餐点、预定政策、优惠、评分、床型偏好、24 小时前台、热门主题/活动、海滩、客房设施、酒店所在区、连锁酒店。针对用户选择的酒店，具体提供了以下信息：酒店星级、酒店价格、酒店照片、相关文字介绍、用户评论、在地图上的位置、推荐的精彩活动、可预订空房列表、设施、相关条款、预订须知等，并会根据用户点评提炼出关键词。用户可以选择咨询客服、将酒店添加至心愿单、立刻预订、分享给好友。
+		\subsubsection{酒店预订}
+			
+		
+		\subsubsection{浏览记录}
+		用户在浏览 booking 网站时，网站会提供用户的最新浏览记录，浏览该酒店的人数，最新的用户评论，最新订单等实时信息。
+		
+
+\section{用例图, 事件流, 类图, 顺序图, 状态图}
+	\subsection{Partner}
+		\subsubsection{管理酒店信息}
+		\subsubsection{查看或回复评论}
+		\subsubsection{联系客服}
+		\subsubsection{退出加盟}
+		
+	\subsection{Administrator}
+		\subsubsection{管理加盟申请}
+		\subsubsection{管理用户}
+		
+		
+	
+	\subsection{User}
+	
+		\subsubsection{注册}
+			\begin{tabular}{c|l}
+			\hline
+			用例名称 & 注册Register \\ \hline
+			参与者 & 酒店合作伙伴Partner, 顾客User  \\ \hline
+			入口条件 & 用户点击注册按钮 \\ \hline
+			事件流 & 	\parbox{33em}{\ \\
+						1. 用户点击注册按钮 \\
+						2. 系统弹出注册窗口, 用户在窗口中输入账号, 密码, 确认密码, 邮箱, 手机号等信息, 选择注册类型(Partner, User), 点击确认  \\
+						3. 系统弹出验证码输入窗口 \\
+						4. 用户点击获取验证码, 系统向手机号或邮箱发送验证码 \\
+						5. 用户输入验证码, 点击确认 \\
+						6. 注册成功. 系统提示注册成功, 并向邮箱发送注册成功的邮件 \\
+						} \\ \hline
+			出口条件 & 注册成功或用户主动退出 \\ \hline
+			质量需求 & \parbox{33em}{\ \\
+						1. 用户两次输入的密码相匹配, 邮箱, 手机号格式正确 \\ 
+						2. 用户名未被注册 \\
+						3. 验证码须在10min之内成功验证 \\
+						} \\ \hline
+			\end{tabular}
+
+		
+		
+		\subsubsection{登录}
+			\begin{tabular}{c|l}
+			\hline
+			用例名称 & 登录 login \\ \hline
+			参与者 & 酒店合作伙伴Partner, 管理员Administrator, 以及顾客User  \\ \hline
+			入口条件 & 用户点击登录按钮 \\ \hline
+			事件流 & 	\parbox{33em}{\ \\
+						1. 用户点击登录按钮 \\
+						2. 系统弹出登录窗口 \\
+						3. 用户在窗口中输入账号, 密码和验证码, 点击确认  \\
+						4. 登录成功 \\
+						} \\ \hline
+			出口条件 & 登录成功或用户主动退出 \\ \hline
+			质量需求 & \parbox{33em}{\ \\
+						1. 用户输入的账号和密码相匹配 \\
+						2. 用户输入的验证码正确 \\
+						} \\ \hline
+			\end{tabular}
+			
+			语言成分分析: 
+			\begin{tabular}{|c|c|c|}\hline
+			\end{tabular}
+			
+			
+						
+		\subsubsection{酒店搜索}
+			\begin{tabular}{c|l}
+			\hline
+			用例名称 & 酒店搜索 Hotel Search \\ \hline
+			参与者 & 顾客User  \\ \hline
+			入口条件 & 用户在搜索界面上输入相关信息, 点击搜索按钮 \\ \hline
+			事件流 & 	\parbox{33em}{\ \\
+						1. 用户在搜索界面上输入城市, 入住日期,  离开日期, 点击搜索按钮 \\
+						2. 系统获取用户的输入信息, 在数据库中查找符合条件的酒店 \\
+						3. 系统将符合条件的酒店显示到界面上, 并在地图上标注  \\
+						} \\ \hline
+			出口条件 & 系统显示搜索结果或用户主动退出 \\ \hline
+			质量需求 & \parbox{33em}{\ \\
+						用户输入的搜索信息完整 \\
+						} \\ \hline
+			\end{tabular}
+
+		\subsubsection{预订}
+		\subsubsection{支付}
+		\subsubsection{评论}
+		\subsubsection{收藏}
+		\subsubsection{订单查询}
+		\subsubsection{联系客服}
+	
+	
+	
+\end{document}

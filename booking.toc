@@ -1,0 +1,29 @@
+\contentsline {section}{\numberline {1}用例与需求分析}{2}
+\contentsline {subsection}{\numberline {1.1}参与者}{2}
+\contentsline {subsection}{\numberline {1.2}酒店合作伙伴 Partner}{2}
+\contentsline {subsection}{\numberline {1.3}管理员 Administrator}{2}
+\contentsline {subsection}{\numberline {1.4}顾客 User}{2}
+\contentsline {subsubsection}{\numberline {1.4.1}注册登录}{2}
+\contentsline {subsubsection}{\numberline {1.4.2}查看推送}{2}
+\contentsline {subsubsection}{\numberline {1.4.3}酒店搜索}{2}
+\contentsline {subsubsection}{\numberline {1.4.4}酒店预订}{3}
+\contentsline {subsubsection}{\numberline {1.4.5}浏览记录}{3}
+\contentsline {section}{\numberline {2}用例图, 事件流, 类图, 顺序图, 状态图}{3}
+\contentsline {subsection}{\numberline {2.1}Partner}{3}
+\contentsline {subsubsection}{\numberline {2.1.1}管理酒店信息}{3}
+\contentsline {subsubsection}{\numberline {2.1.2}查看或回复评论}{3}
+\contentsline {subsubsection}{\numberline {2.1.3}联系客服}{3}
+\contentsline {subsubsection}{\numberline {2.1.4}退出加盟}{3}
+\contentsline {subsection}{\numberline {2.2}Administrator}{3}
+\contentsline {subsubsection}{\numberline {2.2.1}管理加盟申请}{3}
+\contentsline {subsubsection}{\numberline {2.2.2}管理用户}{3}
+\contentsline {subsection}{\numberline {2.3}User}{3}
+\contentsline {subsubsection}{\numberline {2.3.1}注册}{3}
+\contentsline {subsubsection}{\numberline {2.3.2}登录}{4}
+\contentsline {subsubsection}{\numberline {2.3.3}酒店搜索}{4}
+\contentsline {subsubsection}{\numberline {2.3.4}预订}{4}
+\contentsline {subsubsection}{\numberline {2.3.5}支付}{4}
+\contentsline {subsubsection}{\numberline {2.3.6}评论}{4}
+\contentsline {subsubsection}{\numberline {2.3.7}收藏}{4}
+\contentsline {subsubsection}{\numberline {2.3.8}订单查询}{4}
+\contentsline {subsubsection}{\numberline {2.3.9}联系客服}{4}
