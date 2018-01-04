@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.12.17)  4 JAN 2018 13:32
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.12.17)  4 JAN 2018 16:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1315,20 +1315,22 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <17.28> on input line 28.
+(Font)              <12> on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 28.
+(Font)              <8> on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 28.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 28.
- [2] [3] (./任务分配.aux) ) 
+(Font)              <6> on input line 27.
+
+
+LaTeX Warning: No \author given.
+
+[2] [3] (./任务分配.aux) ) 
 Here is how much of TeX's memory you used:
- 19420 strings out of 493005
- 397733 string characters out of 6134595
+ 19418 strings out of 493005
+ 397713 string characters out of 6134595
  423909 words of memory out of 5000000
- 23254 multiletter control sequences out of 15000+600000
- 7548 words of font info for 46 fonts, out of 8000000 for 9000
+ 23252 multiletter control sequences out of 15000+600000
+ 6642 words of font info for 44 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  57i,10n,67p,10410b,288s stack positions out of 5000i,500n,10000p,200000b,80000s
 
