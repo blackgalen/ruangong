@@ -1,0 +1,82 @@
+\documentclass[18pt]{article}
+
+%减少左右空白边缘
+%\usepackage{fullpage}
+\usepackage[left=1.3in, right=1.3in, top=1.3in, bottom=1.3in]{geometry}
+
+%支持中文
+\usepackage[UTF8, heading = false, scheme = plain]{ctex}
+
+% 页眉页脚
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\slshape Left Title}
+\fancyhead[R]{\slshape Right Title}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+%目录
+\tableofcontents
+%标题
+\title{My Practice \LaTeX \ Document}
+\author{Minxue}
+\date{\today}
+\maketitle
+
+我看了一下学长学姐做好的 booking 系统, 
+把系统分为以下模块: 
+\section{模块划分}
+
+	\subsection{用户管理}
+	\begin{enumerate}
+		\item 普通用户与合作伙伴注册登录
+		\item 管理员登录
+		\item 用户登出
+		\item 密码修改
+		\item 用户信息修改
+	\end{enumerate}
+	
+	\subsection{业务主体-普通用户}
+	\begin{enumerate}
+		\item 酒店搜索
+		\item 酒店预订
+		\item 订单查询与修改
+		\item 酒店收藏
+		\item 添加银行卡信息
+	\end{enumerate}
+	
+	\subsection{业务主体-合作伙伴}
+	\begin{enumerate}
+		\item 修改酒店信息
+		\item 查看评论
+		\item 回复评论
+	\end{enumerate}
+	
+	\subsection{售后服务?}
+	\begin{enumerate}
+		\item 查看常见问题和解答
+		\item 查看相关条款
+		\item 咨询客服
+	\end{enumerate}
+	
+	\subsection{软件设置}
+	\begin{enumerate}
+		\item 语言选择
+		\item 主题选择
+		\item 货币选择
+	\end{enumerate}
+	
+	\subsection{其他服务}
+	\begin{enumerate}
+		\item 租车服务
+		\item 早午晚餐预订
+		\item 货币选择
+	\end{enumerate}
+
+	
+
+\end{document}

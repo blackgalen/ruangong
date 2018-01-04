@@ -6,7 +6,7 @@
 %插入图像 .jpg .png .pdf
 \usepackage{graphicx}
 %支持中文
-\usepackage[UTF8, heading = false, scheme = plain]{ctex}  
+\usepackage[UTF8, heading = false, scheme = plain]{ctex}
 % 页眉页脚
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -97,18 +97,37 @@
 						1. 用户点击登录按钮 \\
 						2. 系统弹出登录窗口 \\
 						3. 用户在窗口中输入账号, 密码和验证码, 点击确认  \\
-						4. 登录成功 \\
+						4. 系统在后台验证用户输入的账号, 密码以及验证码的正确性 \\
+						5. 登录成功 \\
 						} \\ \hline
 			出口条件 & 登录成功或用户主动退出 \\ \hline
 			质量需求 & \parbox{33em}{\ \\
 						1. 用户输入的账号和密码相匹配 \\
 						2. 用户输入的验证码正确 \\
 						} \\ \hline
-			\end{tabular}
+			\end{tabular}\\ \\ \\ \\ 
 			
-			语言成分分析: 
-			\begin{tabular}{|c|c|c|}\hline
-			\end{tabular}
+						
+			实体对象 \\
+			\begin{tabular}{l|l}\hline
+			用户 User & 这是希望登入系统的用户 \\ \hline
+			用户数据库 User DB & 存储用户信息的数据库 \\ \hline
+			\end{tabular} \\ \\ \\ \\
+
+
+			边界对象 \\
+			\begin{tabular}{l|l}\hline
+			登录按钮 Login Button & 登录按钮 \\ \hline
+			登录界面 Login Page & 登录界面 \\ \hline
+			\end{tabular} \\ \\ \\ \\
+
+			
+			控制对象 \\
+			\begin{tabular}{l|l}\hline
+			登录界面控件 Login Control & 用来控制登录界面 \\ \hline
+			登录模型 Login Model & 用来判断用户信息 \\ \hline 	
+			数据库控件 DB Controller & 用来控制数据库 \\ \hline
+			\end{tabular} \\ \\ \\ \\
 			
 			
 						
