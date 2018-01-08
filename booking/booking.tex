@@ -17,15 +17,33 @@
 \fancyfoot[C]{\thepage}
 
 \begin{document}
+
+% 标题页
+\begin{titlepage}
+\begin{center}
+
+	\huge{\textbf{软件工程\ 课程设计报告}}\\
+
+	\vfill
+	\line(1, 0){400} \\ [1mm]
+	\large{\textbf{09015116\ 樊博杰}} \\ [1mm]
+	\large{\textbf{09015124\ 邹家伦}} \\ [1mm]
+	\large{\textbf{09015128\ 张敏学}} \\ [1mm]
+	\large{\textbf{09015204\ 杨艳春}} \\ [1mm]
+	\large{\textbf{09015209\ 刘韦}} \\ [1mm]
+	\line(1, 0){400} \\
+	\large{\today}\\
+\end{center}
+\end{titlepage}
+
 %目录
 \tableofcontents
-%标题
-\title{软件工程课程报告}
-\author{galen}
-\date{\today}
-\maketitle
+\thispagestyle{empty}
+\clearpage
 
 
+\setcounter{page}{1}
+\fancyhead[R]{\slshape 用例与需求分析}
 \section{用例与需求分析}
 	\subsection{参与者}
 	一共有三类参与者: 酒店合作伙伴(Partner), 管理员(Administrator), 以及顾客(User)
@@ -47,21 +65,18 @@
 		\subsubsection{浏览记录}
 		用户在浏览 booking 网站时，网站会提供用户的最新浏览记录，浏览该酒店的人数，最新的用户评论，最新订单等实时信息。
 		
+		
 
+
+
+
+\pagebreak
+\fancyhead[R]{\slshape 用例图, 事件流, 类图, 顺序图, 状态图}
 \section{用例图, 事件流, 类图, 顺序图, 状态图}
-	\subsection{Partner}
-		\subsubsection{管理酒店信息}
-		\subsubsection{查看或回复评论}
-		\subsubsection{联系客服}
-		\subsubsection{退出加盟}
-		
-	\subsection{Administrator}
-		\subsubsection{管理加盟申请}
-		\subsubsection{管理用户}
-		
-		
-	
-	\subsection{User}
+
+
+
+	\subsection{用户管理}
 	
 		\subsubsection{注册}
 			\begin{tabular}{c|l}
@@ -85,8 +100,8 @@
 						} \\ \hline
 			\end{tabular}
 
-		
-		
+
+
 		\subsubsection{登录}
 			\begin{tabular}{c|l}
 			\hline
@@ -128,9 +143,64 @@
 			登录模型 Login Model & 用来判断用户信息 \\ \hline 	
 			数据库控件 DB Controller & 用来控制数据库 \\ \hline
 			\end{tabular} \\ \\ \\ \\
+
+		
+		\subsubsection{登出}
+		
+			\begin{tabular}{c|l}
+			\hline
+			用例名称 & 登出 logout \\ \hline
+			参与者 & 酒店合作伙伴Partner, 管理员Administrator, 以及顾客User  \\ \hline
+			入口条件 & 用户点击退出按钮 \\ \hline
+			事件流 & 	\parbox{33em}{\ \\
+						1. 用户点击退出按钮 \\
+						2. 系统弹出确认退出窗口 \\
+						3. 用户在窗口中点击确认  \\
+						4. 系统在后台退出用户的登录状态 \\
+						5. 退出成功 \\
+						} \\ \hline
+			出口条件 & 退出成功 \\ \hline
+			质量需求 & \parbox{33em}{\ \\
+						用户在确认退出窗口中点击确认 \\
+						} \\ \hline
+			\end{tabular}\\ \\ \\ \\ 
 			
-			
-						
+		\subsubsection{密码修改}
+			\begin{tabular}{c|l}
+			\hline
+			用例名称 & 密码修改 Change Password \\ \hline
+			参与者 & 酒店合作伙伴Partner, 管理员Administrator, 以及顾客User  \\ \hline
+			入口条件 & 用户点击修改密码按钮 \\ \hline
+			事件流 & 	\parbox{33em}{\ \\
+						1. 用户点击修改密码按钮 \\
+						2. 系统弹出修改密码页面, 页面中包含: 新密码, 新密码确认, 验证码, 获取验证码的按钮, 确认按钮以及取消按钮\\
+						3. 用户在页面中输入相关信息, 点击确认  \\
+						4. 系统判断两次输入密码是否一致, 且验证码是否正确 \\
+						5. 密码修改成功 \\
+						} \\ \hline
+			出口条件 & 密码修改成功 \\ \hline
+			质量需求 & \parbox{33em}{\ \\
+						1. 用户两次输入的密码一致 \\
+						2. 用户输入的验证码正确 \\
+						} \\ \hline
+			\end{tabular}\\ \\ \\ \\ 
+
+		\subsubsection{用户信息修改}
+
+	\subsection{酒店合作伙伴Partner}
+		\subsubsection{管理酒店信息}
+		\subsubsection{查看或回复评论}
+		\subsubsection{联系客服}
+		\subsubsection{退出加盟}
+		
+	\subsection{管理员Administrator}
+		\subsubsection{管理加盟申请}
+		\subsubsection{管理用户}
+		
+		
+	
+	\subsection{普通用户User}
+	
 		\subsubsection{酒店搜索}
 			\begin{tabular}{c|l}
 			\hline
@@ -153,8 +223,16 @@
 		\subsubsection{评论}
 		\subsubsection{收藏}
 		\subsubsection{订单查询}
+	
+	\subsection{售后服务?}
+		\subsubsection{查看常见问题和解答}
+		\subsubsection{查看相关条款}
 		\subsubsection{联系客服}
-	
-	
-	
+	\subsection{软件设置}
+		\subsubsection{语言选择}
+		\subsubsection{主题选择}
+		\subsubsection{货币选择}
+	\subsection{其他服务}
+		\subsubsection{租车服务}
+		\subsubsection{三餐预订}
 \end{document}
