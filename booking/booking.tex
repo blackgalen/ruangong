@@ -109,6 +109,7 @@
 	\subsection{用户管理}
 	
 		\subsubsection{注册}
+			用例: \\ \\
 			\begin{tabular}{c|l}
 			\hline
 			用例名称 & 注册Register \\ \hline
@@ -127,12 +128,56 @@
 						1. 用户两次输入的密码相匹配, 邮箱, 手机号格式正确 \\ 
 						2. 用户名未被注册 \\
 						3. 验证码须在10min之内成功验证 \\
+						4. 网络通畅 \\
 						} \\ \hline
+			\end{tabular}\\ \\ \\
+			\texttt{
+			Algorithm Register \\
+			Input : username, password, email, phoneNumber \\
+			Output : true or false \\
+			1. find the same username in database \\
+			2. if(username is exist) \\
+			3.     return false \\
+			4. return true \\
+			} \\
+			
+			语言成分分析:
+			\begin{center}
+			\begin{tabular}{|c|c|c|}
+			\hline
+			语言成分 & 模型构件 & 实例\\ \hline
+			专有名词 & Object & Jack  \\ \hline
+			普通名词 & Class & 用户, 界面 \\ \hline
+			Doing 动词 & Method &  修改, 注册 \\ \hline
+			Having 动词 & aggregation & 包括 \\ \hline
+			形容词, 名词 & Attribute & 用户名，密码，邮箱，手机号码 \\ \hline
 			\end{tabular}
+			\end{center}
+			
+			用例图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{注册_用例图.png}
+			\end{center}
+
+			类图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{注册_类图.png}
+			\end{center}
+
+			状态图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{注册_状态图.png}
+			\end{center}
+
+			顺序图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{注册_顺序图.png}
+			\end{center}
 
 
 
 		\subsubsection{登录}
+			用例: \\ \\
 			\begin{tabular}{c|l}
 			\hline
 			用例名称 & 登录 login \\ \hline
@@ -150,33 +195,53 @@
 						1. 用户输入的账号和密码相匹配 \\
 						2. 用户输入的验证码正确 \\
 						} \\ \hline
-			\end{tabular}\\ \\ \\ \\ 
+			\end{tabular}\\ \\ \\
+			\texttt{
+			Algorithm Login \\
+			Input : username, password \\
+			Output : true or false \\
+			1. find the same username in database \\
+			2. if(username is exist and password is right) \\
+			3.     return true \\
+			4. return false \\
+			} \\
 			
-						
-			实体对象 \\
-			\begin{tabular}{l|l}\hline
-			用户 User & 这是希望登入系统的用户 \\ \hline
-			用户数据库 User DB & 存储用户信息的数据库 \\ \hline
-			\end{tabular} \\ \\ \\ \\
-
-
-			边界对象 \\
-			\begin{tabular}{l|l}\hline
-			登录按钮 Login Button & 登录按钮 \\ \hline
-			登录界面 Login Page & 登录界面 \\ \hline
-			\end{tabular} \\ \\ \\ \\
-
+			语言成分分析:
+			\begin{center}
+			\begin{tabular}{|c|c|c|}
+			\hline
+			语言成分 & 模型构件 & 实例\\ \hline
+			专有名词 & Object & Jack  \\ \hline
+			普通名词 & Class & 用户，界面 \\ \hline
+			Doing 动词 & Method &  修改，登录 \\ \hline
+			Having 动词 & aggregation & 包括 \\ \hline
+			形容词, 名词 & Attribute & 用户名，密码 \\ \hline
+			\end{tabular}
+			\end{center}
 			
-			控制对象 \\
-			\begin{tabular}{l|l}\hline
-			登录界面控件 Login Control & 用来控制登录界面 \\ \hline
-			登录模型 Login Model & 用来判断用户信息 \\ \hline 	
-			数据库控件 DB Controller & 用来控制数据库 \\ \hline
-			\end{tabular} \\ \\ \\ \\
+			用例图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{登录_用例图.png}
+			\end{center}
+
+			类图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{登录_类图.png}
+			\end{center}
+
+			状态图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{登录_状态图.png}
+			\end{center}
+
+			顺序图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{登录_顺序图.png}
+			\end{center}
 
 		
 		\subsubsection{登出}
-		
+			用例: \\ \\
 			\begin{tabular}{c|l}
 			\hline
 			用例名称 & 登出 logout \\ \hline
@@ -193,9 +258,50 @@
 			质量需求 & \parbox{33em}{\ \\
 						用户在确认退出窗口中点击确认 \\
 						} \\ \hline
-			\end{tabular}\\ \\ \\ \\ 
+			\end{tabular}\\ \\ \\
+			\texttt{
+			Algorithm Logout \\
+			Input : username \\
+			Output : null \\
+			1. find the same username in database \\
+			2. change the user state to offline \\
+			} \\
+			
+			语言成分分析:
+			\begin{center}
+			\begin{tabular}{|c|c|c|}
+			\hline
+			语言成分 & 模型构件 & 实例\\ \hline
+			专有名词 & Object & Jack  \\ \hline
+			普通名词 & Class & 用户，界面 \\ \hline
+			Doing 动词 & Method &  修改，退出 \\ \hline
+			Having 动词 & aggregation & 包括 \\ \hline
+			形容词, 名词 & Attribute & 用户名 \\ \hline
+			\end{tabular}
+			\end{center}
+			
+			用例图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{登出_用例图.png}
+			\end{center}
+
+			类图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{登出_类图.png}
+			\end{center}
+
+			状态图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{登出_状态图.png}
+			\end{center}
+
+			顺序图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{登出_顺序图.png}
+			\end{center}
 			
 		\subsubsection{密码修改}
+			用例: \\ \\
 			\begin{tabular}{c|l}
 			\hline
 			用例名称 & 密码修改 Change Password \\ \hline
@@ -213,9 +319,54 @@
 						1. 用户两次输入的密码一致 \\
 						2. 用户输入的验证码正确 \\
 						} \\ \hline
-			\end{tabular}\\ \\ \\ \\ 
+			\end{tabular}\\ \\ \\
+			\texttt{
+			Algorithm Change Password \\
+			Input : username, password, verifyCode \\
+			Output : true or false \\
+			1. find the same username in database \\
+			2. if(verifyCode is correct) \\
+			3.     change the password corresponding to user \\
+			4.     return true \\
+			5. return false \\
+			} \\
+			
+			语言成分分析:
+			\begin{center}
+			\begin{tabular}{|c|c|c|}
+			\hline
+			语言成分 & 模型构件 & 实例\\ \hline
+			专有名词 & Object & Jack  \\ \hline
+			普通名词 & Class & 用户，界面 \\ \hline
+			Doing 动词 & Method &  修改 \\ \hline
+			Having 动词 & aggregation & 包括 \\ \hline
+			形容词, 名词 & Attribute & 用户名，密码，验证码 \\ \hline
+			\end{tabular}
+			\end{center}
+			
+			用例图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{修改密码_用例图.png}
+			\end{center}
+
+			类图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{修改密码_类图.png}
+			\end{center}
+
+			状态图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{修改密码_状态图.png}
+			\end{center}
+
+			顺序图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{修改密码_顺序图.png}
+			\end{center}
+
 
 		\subsubsection{用户信息修改}
+			用例: \\ \\
 			\begin{tabular}{c|l}
 			\hline
 			用例名称 & 用户信息修改 Change Information \\ \hline
@@ -233,8 +384,50 @@
 						1. 用户输入的手机号和邮箱合法 \\
 						2. 用户输入的验证码正确 \\
 						} \\ \hline
-			\end{tabular}\\ \\ \\ \\ 
+			\end{tabular}\\ \\ \\
+			\texttt{
+			Algorithm Change Information \\
+			Input : username, verifyCode, userInfo \\
+			Output : true or false \\
+			1. find the same username in database \\
+			2. if(verifyCode is correct) \\
+			3.     change the userInfo corresponding to user \\
+			4.     return true \\
+			5. return false \\
+			} \\
+			
+			语言成分分析:
+			\begin{center}
+			\begin{tabular}{|c|c|c|}
+			\hline
+			语言成分 & 模型构件 & 实例\\ \hline
+			专有名词 & Object & Jack  \\ \hline
+			普通名词 & Class & 用户，界面 \\ \hline
+			Doing 动词 & Method &  修改 \\ \hline
+			Having 动词 & aggregation & 包括 \\ \hline
+			形容词, 名词 & Attribute & 用户名，用户信息，验证码 \\ \hline
+			\end{tabular}
+			\end{center}
+			
+			用例图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{修改用户信息_用例图.png}
+			\end{center}
 
+			类图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{修改用户信息_类图.png}
+			\end{center}
+
+			状态图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{修改用户信息_状态图.png}
+			\end{center}
+
+			顺序图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{修改用户信息_顺序图.png}
+			\end{center}
 			
 			
 			
@@ -254,6 +447,7 @@
 	\subsection{普通用户User}
 	
 		\subsubsection{酒店搜索}
+			用例: \\ \\
 			\begin{tabular}{c|l}
 			\hline
 			用例名称 & 酒店搜索 Hotel Search \\ \hline
@@ -275,34 +469,565 @@
 		\subsubsection{评论}
 		\subsubsection{收藏}
 		\subsubsection{订单查询}
+		\subsubsection{添加信用卡}
+			用例: \\ \\
+			\begin{tabular}{c|l}
+			\hline
+			用例名称 & 添加信用卡 Add\ CreditCard \\ \hline
+			参与者 & 用户 User  \\ \hline
+			入口条件 & 用户 User 点击添加信用卡按钮 \\ \hline
+			事件流 & 	\parbox{33em}{\ \\
+						1. 用户 User 点击添加信用卡按钮 \\
+						2. Booking系统弹出添加信用卡页面 \\
+						3. 用户补充相关信息, 点击提交按钮或者取消按钮  \\
+						4. 若用户点击提交, Booking 系统检查信用卡是否有效, 若有效, 保存相关信息, 若无效, 显示错误提示, 若用户选择取消则直接返回设置界面 \\
+						} \\ \hline
+			出口条件 & \parbox{33em}{\ \\
+						提交成功或者点击取消按钮 \\
+						} \\ \hline
+			质量需求 & \parbox{33em}{\ \\
+						1. 网络通畅 \\
+						2. 当前用户处于登录状态 \\
+						} \\ \hline
+			\end{tabular} \\ \\ \\
+			\texttt{
+			Algorithm AddCreditCard \\
+			Input : cardNumber, password \\
+			Output : true or false \\
+			1.Search the dataset to check if the credit Card valid \\
+			2.if true \\
+			3.  save the credit card information. \\
+			4.	return true \\
+			5.else \\
+			6.  return false \\
+			} \\
+			
+			语言成分分析:
+			\begin{center}
+			\begin{tabular}{|c|c|c|}
+			\hline
+			语言成分 & 模型构件 & 实例\\ \hline
+			专有名词 & Object & GDW  \\ \hline
+			普通名词 & Class & 用户, 界面 \\ \hline
+			Doing 动词 & Method &  显示, 修改, 检查, 保存 \\ \hline
+			Being 动词 & inheritance & 是……的某一项 \\ \hline
+			Having 动词 & aggregation &  包括 \\ \hline
+			情态动词 & constraint & 必须 \\ \hline
+			形容词, 名词 & Attribute & 货币类型 \\ \hline
+			\end{tabular}
+			\end{center}
+			
+			类图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{普通用户添加信用卡类图.png}
+			\end{center}
+
+			状态图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{普通用户添加信用卡状态图.png}
+			\end{center}
+
+			顺序图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{普通用户添加信用卡顺序图.png}
+			\end{center}
 	
-	\subsection{售后服务?}
+	\subsection{其他功能}
 		\subsubsection{查看常见问题和解答}
-		\subsubsection{查看相关条款}
-		\subsubsection{联系客服}
+			用例: \\ \\
+			\begin{tabular}{c|l}
+			\hline
+			用例名称 & 查看常见问题和解答 \\ \hline
+			参与者 & 顾客User  \\ \hline
+			入口条件 & 顾客 User 选择常见问题及解答 \\ \hline
+			事件流 & 	\parbox{33em}{\ \\
+						1. 用户在搜索界面上输入城市, 入住日期,  离开日期, 点击搜索按钮 \\
+						2. 系统获取用户的输入信息, 在数据库中查找符合条件的酒店 \\
+						3. 系统将符合条件的酒店显示到界面上, 并在地图上标注  \\
+						} \\ \hline
+			出口条件 & \parbox{33em}{\ \\
+						1. 顾客User得到满意答案 \\
+						2.  	顾客User进一步选择联系客服，修改订单，取消订单等选项 \\
+						} \\ \hline
+			质量需求 & \parbox{33em}{\ \\
+						网络通畅，有足够多的问题种类及回答，答案质量高 \\
+						} \\ \hline
+			\end{tabular} \\ \\ \\
+			\texttt{
+			Algorithm Answers \\
+				Input：null \\
+				Output: answers \\
+				1.	click Customer service \\
+				2.	jump to inquiry page \\
+				3.	return null \\
+			} \\
+			\texttt{
+			Algorithm SearchByKeyword \\
+			Input:Keywords \\
+			Output:answers \\
+			1.	search the database with the keyword \\
+			2.	if searched \\
+			3.	show the related issues and the answers \\
+			4.	else keep the page \\
+			5.	return null \\
+			} \\
+
+			语言成分分析: \\
+			\begin{center}
+			\begin{tabular}{|c|c|c|}
+			\hline
+			语言成分 & 模型构件 & 实例\\ \hline
+			专有名词 & Object & Rose  \\ \hline
+			普通名词 & Class & 用户, 界面 \\ \hline
+			Doing 动词 & Method & 点击, 选择, 进入, 搜索, 输入, 显示 \\ \hline
+			名词 & Attribute & 按钮, 链接, 关键词, 结果, 评价 \\ \hline
+			\end{tabular}
+			\end{center}
+			
+			类图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{4.1类图.png}
+			\end{center}
+			
+			状态图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{4.1状态图.png}
+			\end{center}
+
+			顺序图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{4.1顺序图.png}
+			\end{center}
+
+			
+
+
+		\subsubsection{查看相关条款 Relevant\ Terms}
+			用例: \\ \\
+			\begin{tabular}{c|l}
+			\hline
+			用例名称 & 查看相关条款 Relevant\ Terms \\ \hline
+			参与者 & 顾客User  \\ \hline
+			入口条件 & 顾客 User  点击网站下方的相关条款选项 \\ \hline
+			事件流 & 	\parbox{33em}{\ \\
+						1. 顾客 User  点击网站下方的相关条款选项 \\
+						2. 顾客 User 选择了想要了解的相关条款(如良好行为准则, 条款及条件介绍等) \\
+						3. 网站会调到顾客选择的相关部分  \\
+						4. 顾客 User 可以选择打印或保存 \\
+						} \\ \hline
+			出口条件 & \parbox{33em}{\ \\
+						显示相关条款内容 \\
+						} \\ \hline
+			质量需求 & \parbox{33em}{\ \\
+						网络通畅 \\
+						} \\ \hline
+			\end{tabular} \\ \\ \\
+			\texttt{
+			Algorithm Search Relevant Terms \\
+			Input：null \\
+			Output:null \\
+			1.	jump to Travel terms and conditions page \\
+			2.	return null \\
+			} \\
+
+			语言成分分析: \\
+			\begin{center}
+			\begin{tabular}{|c|c|c|}
+			\hline
+			语言成分 & 模型构件 & 实例\\ \hline
+			专有名词 & Object & Rose  \\ \hline
+			普通名词 & Class & 用户, 界面 \\ \hline
+			Doing 动词 & Method & 点击, 选择, 进入, 显示 \\ \hline
+			名词 & Attribute & 按钮 \\ \hline
+			\end{tabular}
+			\end{center}
+			
+			类图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{4.2类图.png}
+			\end{center}
+
+			状态图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{4.2状态图.png}
+			\end{center}
+
+			顺序图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{4.2顺序图.png}
+			\end{center}
+
+
+
+		\subsubsection{咨询客服 Consulting\ service}
+			用例: \\ \\
+			\begin{tabular}{c|l}
+			\hline
+			用例名称 & 咨询客服 Consulting\ service \\ \hline
+			参与者 & 顾客User  \\ \hline
+			入口条件 &  	顾客User点击网站下方的客服帮助选项 \\ \hline
+			事件流 & 	\parbox{33em}{\ \\
+						1. 顾客User点击网站下方的客服帮助选项 \\
+						2. 顾客User点击'拨打电话或发邮件联系我们'的按钮 \\
+						3. 顾客User填写预定编号、邮箱、电话、需要解决的问题  \\
+						4. 顾客User点击发送按钮  \\
+						5. 顾客User也可选择拨打网页下方提供的服务电话  \\
+						} \\ \hline
+			出口条件 & \parbox{33em}{\ \\
+						发送完毕 \\
+						} \\ \hline
+			质量需求 & \parbox{33em}{\ \\
+						网络通畅 \\
+						} \\ \hline
+			\end{tabular} \\ \\ \\
+			\texttt{
+			Algorithm Search Relevant Terms \\
+			Input：null \\
+			Output:null \\
+			1.	click Customer service \\
+			2.	write phone number,questions \\
+			3.	click send button \\
+			4.	return null \\
+			} \\ \\ \\
+
+			语言成分分析: \\
+			\begin{center}
+			\begin{tabular}{|c|c|c|}
+			\hline
+			语言成分 & 模型构件 & 实例\\ \hline
+			专有名词 & Object & Rose  \\ \hline
+			普通名词 & Class & 用户, 界面 \\ \hline
+			Doing 动词 & Method & 点击, 进入, 拨打, 填写, 发送 \\ \hline
+			名词 & Attribute & 按钮, 邮箱, 预订编号, 需要解决的问题 \\ \hline
+			\end{tabular}
+			\end{center}
+
+			类图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{4.3类图.png}
+			\end{center}
+
+			状态图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{4.3状态图.png}
+			\end{center}
+
+			顺序图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{4.3顺序图.png}
+			\end{center}
+
+
 	\subsection{软件设置}
 		\subsubsection{语言选择}
+			用例: \\ \\
+			\begin{tabular}{c|l}
+			\hline
+			用例名称 & 选择语言 Choose\ Language \\ \hline
+			参与者 & 用户 User, 合作伙伴 Partner, 管理员 Administrator  \\ \hline
+			入口条件 & 用户 User 点击国旗按钮 \\ \hline
+			事件流 & 	\parbox{33em}{\ \\
+						1. 用户点击国旗按钮 \\
+						2. Booking系统返回语言选择界面 \\
+						3. 用户 User 选择需要的语言并点击  \\
+						4.  页面刷新, 并更新成相应的语言 \\
+						} \\ \hline
+			出口条件 & \parbox{33em}{\ \\
+						界面语言更换 \\
+						} \\ \hline
+			质量需求 & \parbox{33em}{\ \\
+						网络通畅 \\
+						} \\ \hline
+			\end{tabular} \\ \\ \\
+			\texttt{
+			Algorithm ChooseLanguage：\\
+			Input: selected language(the language which the user selected), the language set, the set of URLs in different languages \\
+			Output: null \\
+			1: for each language in the language set do \\
+			2:	if current language == selected language \\
+			3:		address←URL in selected language \\
+			4: end for \\
+			5: refresh the page \\
+			6: return null \\
+			} \\
+
+			语言成分分析: \\
+			\begin{center}
+			\begin{tabular}{|c|c|c|}
+			\hline
+			语言成分 & 模型构件 & 实例\\ \hline
+			专有名词 & Object & Jack  \\ \hline
+			普通名词 & Class & 用户, 界面 \\ \hline
+			Doing 动词 & Method &  点击, 更新, 刷新 \\ \hline
+			名词 & Attribute & 国旗按钮 \\ \hline
+			\end{tabular}
+			\end{center}
+
+			用例图：
+			\begin{center}
+			\includegraphics[scale=0.42]{setting部分用例图.png}
+			\end{center}
+			
+			类图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{选择语言类图.png}
+			\end{center}
+
+			状态图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{选择语言状态图.png}
+			\end{center}
+
+			顺序图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{选择语言顺序图.png}
+			\end{center}
+
+
+
 		\subsubsection{主题选择}
-		\subsubsection{货币选择}
+			用例: \\ \\
+			\begin{tabular}{c|l}
+			\hline
+			用例名称 & 主题选择 Choose\ Theme \\ \hline
+			参与者 & 用户 User  \\ \hline
+			入口条件 & 用户 User 点击 主题选择按钮 \\ \hline
+			事件流 & 	\parbox{33em}{\ \\
+						1. 用户 User  点击主题选择按钮 \\
+						2. Booking系统返回主题选择界面 \\
+						3. 用户选择喜欢的主题并点击  \\
+						4. 页面刷新, 并生成相应的主题界面 \\
+						} \\ \hline
+			出口条件 & \parbox{33em}{\ \\
+						界面主题更换 \\
+						} \\ \hline
+			\end{tabular} \\ \\ \\
+			\texttt{
+			Algorithm Choosetheme：\\
+			Input: selected theme(the theme which the user selected), the theme set, the set of URLs in different themes \\
+			Output: null \\
+			1: for each theme in the theme set do \\
+			2:	if current theme == selected theme \\
+			3:		address←URL in selected theme \\
+			4: end for \\
+			5: refresh the page \\
+			6: return null \\
+			} \\
+
+			语言成分分析: \\
+			\begin{center}
+			\begin{tabular}{|c|c|c|}
+			\hline
+			语言成分 & 模型构件 & 实例\\ \hline
+			专有名词 & Object & Jack  \\ \hline
+			普通名词 & Class & 用户, 界面 \\ \hline
+			Doing 动词 & Method &  点击, 更新, 刷新 \\ \hline
+			名词 & Attribute & 主题图标按钮 \\ \hline
+			\end{tabular}
+			\end{center}
+
+			用例图：
+			\begin{center}
+			\includegraphics[scale=0.42]{setting部分用例图.png}
+			\end{center}
+
+			类图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{选择主题类图.png}
+			\end{center}
+
+			状态图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{选择主题状态图.png}
+			\end{center}
+
+			顺序图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{选择主题顺序图.png}
+			\end{center}
+
+
+		\subsubsection{货币选择 Choose\ Currency}
+			用例: \\ \\
+			\begin{tabular}{c|l}
+			\hline
+			用例名称 & 货币选择 Choose\ Currency \\ \hline
+			参与者 & 用户 User  \\ \hline
+			入口条件 & 用户 User 点击货币选择按钮 \\ \hline
+			事件流 & 	\parbox{33em}{\ \\
+						1. 用户 User  点击货币选择按钮 \\
+						2. Booking系统返回货币选择界面 \\
+						3. 用户选择相应货币，点击确认  \\
+						4. Booking系统保存相关设置到数据库中，刷新相应数据 \\
+						5. 用户点击退出按钮 \\
+						} \\ \hline
+			出口条件 & \parbox{33em}{\ \\
+						用户点击退出按钮 \\
+						} \\ \hline
+			质量需求 & \parbox{33em}{\ \\
+						1. 网络通畅 \\
+						2. 当前用户处于登录状态 \\
+						} \\ \hline
+			\end{tabular} \\ \\ \\
+			\texttt{
+			Algorithm Choose Currency \\
+			Input : null \\
+			Output : true or false \\
+			1. if save successfully \\
+			2.     return true \\
+			3. else \\
+			4.     return false \\
+			} \\
+			
+			语言成分分析:
+			\begin{center}
+			\begin{tabular}{|c|c|c|}
+			\hline
+			语言成分 & 模型构件 & 实例\\ \hline
+			专有名词 & Object & Jack  \\ \hline
+			普通名词 & Class & 用户, 界面 \\ \hline
+			Doing 动词 & Method &  显示, 修改, 检查, 保存 \\ \hline
+			Having 动词 & aggregation & 包括 \\ \hline
+			形容词, 名词 & Attribute & 货币类型 \\ \hline
+			\end{tabular}
+			\end{center}
+			
+			用例图：
+			\begin{center}
+			\includegraphics[scale=0.42]{setting部分用例图.png}
+			\end{center}
+			
+			类图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{选择货币类图.png}
+			\end{center}
+
+			状态图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{选择货币状态图.png}
+			\end{center}
+
+			顺序图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{选择货币顺序图.png}
+			\end{center}
+
+
 	\subsection{其他服务}
 		\subsubsection{租车服务}
+			用例: \\ \\
 			\begin{tabular}{c|l}
-			\cline
-			用例名称 & 用户信息修改 Change Information \\ \hline
-			参与者 & 酒店合作伙伴Partner, 管理员Administrator, 以及顾客User  \\ \hline
-			入口条件 & 用户点击修改用户信息按钮 \\ \hline
+			\hline
+			用例名称 & 租车服务 Car\ Rental \\ \hline
+			参与者 & 顾客 User  \\ \hline
+			入口条件 & 用户点击租车按钮 \\ \hline
 			事件流 & 	\parbox{33em}{\ \\
-						1. 用户点击修改用户信息按钮 \\
-						2. 系统弹出修改用户信息页面, 页面中包含: 用户名, 手机号, 邮箱, , 验证码, 获取验证码的按钮, 确认按钮以及取消按钮\\
-						3. 用户在页面中输入相关信息, 点击确认  \\
-						4. 系统判断新手机号和邮箱是否合法, 验证码是否正确 \\
-						5. 密码修改成功 \\
+						1. 用户点击租车按钮 \\
+						2. 系统弹出租车信息界面, 界面中含有起点, 终点, 预计时长, 预计消费, 以及附近车辆 \\
+						3. 用户在页面中输入终点, 点击租车  \\
+						4. 系统通知附近车辆, 等待司机选择接受 \\
+						5. 如果用户在司机接受前点击取消, 则系统撤回通知, 租车结束 \\
+						6. 司机选择接受, 系统撤回通知, 并通知用户司机已选择及司机的信息 \\
+						7. 用户等待司机到达 \\
+						8. 司机到达后, 用户搭乘司机车辆 \\
+						9. 车辆到达指定地点, 司机点击结算 \\
+						10. 租车结束 \\
 						} \\ \hline
-			出口条件 & 用户信息修改成功 \\ \hline
-			质量需求 & \parbox{33em}{\ \\
-						1. 用户输入的手机号和邮箱合法 \\
-						2. 用户输入的验证码正确 \\
+			出口条件 & 租车结束或者用户主动取消租车 \\ \hline
+			\end{tabular} \\ \\ \\
+			\texttt{
+			Algorithm Car Rental \\
+			Input : null \\
+			Output : null \\
+			1. jump to car rental page \\
+			2. return null
+			} \\
+			
+			语言成分分析:
+			\begin{center}
+			\begin{tabular}{|c|c|c|}
+			\hline
+			语言成分 & 模型构件 & 实例\\ \hline
+			专有名词 & Object & Jack  \\ \hline
+			普通名词 & Class & 用户、界面 \\ \hline
+			Doing 动词 & Method &  点击、进入 \\ \hline
+			名词 & Attribute & 按钮 \\ \hline
+			\end{tabular}
+			\end{center}
+			
+			用例图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{租车服务_用例图.png}
+			\end{center}
+
+			类图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{租车服务_类图.png}
+			\end{center}
+
+			状态图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{租车服务_状态图.png}
+			\end{center}
+
+			顺序图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{租车服务_顺序图.png}
+			\end{center}
+			
+			
+		\subsubsection{餐厅订位 Reserve\ Restaurant}
+			用例: \\ \\
+			\begin{tabular}{c|l}
+			\hline
+			用例名称 & 餐厅订位 Reserve\ Restaurant \\ \hline
+			参与者 & 顾客 User  \\ \hline
+			入口条件 & 顾客点击餐厅订位按钮 \\ \hline
+			事件流 & 	\parbox{33em}{\ \\
+						1. 顾客点击餐厅订位按钮 \\
+						2. 跳转到餐厅订位网站 \\
 						} \\ \hline
-			\end{tabular}\\ \\ \\ \\ 
-		\subsubsection{三餐预订}
+			出口条件 & 进入餐厅订位网站 \\ \hline
+			质量需求 & 网络通畅 \\ \hline
+			\end{tabular} \\ \\ \\
+			\texttt{
+			Algorithm Reserve Restaurant \\
+			Input : null \\
+			Output : null \\
+			1. jump to Reserve Restaurant page \\
+			2. return null
+			} \\
+			
+			语言成分分析:
+			\begin{center}
+			\begin{tabular}{|c|c|c|}
+			\hline
+			语言成分 & 模型构件 & 实例\\ \hline
+			专有名词 & Object & Jack  \\ \hline
+			普通名词 & Class & 用户、界面 \\ \hline
+			Doing 动词 & Method &  点击、进入 \\ \hline
+			名词 & Attribute & 按钮 \\ \hline
+			\end{tabular}
+			\end{center}
+			
+			用例图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{餐厅订位_用例图.png}
+			\end{center}
+
+			类图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{餐厅订位_类图.png}
+			\end{center}
+
+			状态图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{餐厅订位_状态图.png}
+			\end{center}
+
+			顺序图: 
+			\begin{center}
+			\includegraphics[scale=0.42]{餐厅订位_顺序图.png}
+			\end{center}
+			
 \end{document}

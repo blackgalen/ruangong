@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.12.17)  8 JAN 2018 20:34
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.12.17)  9 JAN 2018 16:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1300,13 +1300,15 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 19.
  [1
 
-] (./booking.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 2.
+] (./booking.toc)
+\tf@toc=\write3
+\openout3 = `booking.toc'.
+
+ [1]
+LaTeX Font Info:    Font shape `TU/STSong(0)/m/sl' in size <10.95> not availabl
+e
+(Font)              Font shape `TU/STSong(0)/m/it' tried instead on input line 
+68.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1314,255 +1316,808 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[1])
-\tf@toc=\write3
-\openout3 = `booking.toc'.
-
- [2]
-LaTeX Font Info:    Font shape `TU/STSong(0)/m/sl' in size <10.95> not availabl
-e
-(Font)              Font shape `TU/STSong(0)/m/it' tried instead on input line 
-68.
- [1
+[1
 
 ] [2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 123--123
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 113.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 113.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 113.
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--129
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+
+ []
+
+*************************************************
+* fontspec warning: "script-not-exist"
+* 
+* Font 'STFangsong' does not contain script 'CJK'.
+*************************************************
+\g__fontspec_family_STFangsong_int=\count152
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "STFangsong/BI" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "STFangsong/B" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "STFangsong/I" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'STFangsong(0)' created for font 'STFangsong' with options
+. [Script={CJK}].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.: <->"STFangsong/OT"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+.................................................
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--143
 
  []
 
 
-Overfull \hbox (2.75734pt too wide) in paragraph at lines 111--131
+Overfull \hbox (2.75734pt too wide) in paragraph at lines 112--143
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--146
+Underfull \hbox (badness 10000) in paragraph at lines 112--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--151
+Underfull \hbox (badness 10000) in paragraph at lines 112--143
 
  []
 
 
-Overfull \hbox (2.75734pt too wide) in paragraph at lines 135--153
+Underfull \hbox (badness 10000) in paragraph at lines 112--143
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--143
+
+ []
+
+File: 注册_用例图.png Graphic file (type QTm)
+<use  "注册_用例图.png" > [4]
+File: 注册_类图.png Graphic file (type QTm)
+ <use  "注册_类图.png" >
+File: 注册_状态图.png Graphic file (type QTm)
+ <use  "注册_状态图.png" >
+File: 注册_顺序图.png Graphic file (type QTm)
+
+<use  "注册_顺序图.png" > [5]
+Underfull \hbox (badness 10000) in paragraph at lines 192--192
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--208
+
+ []
+
+
+Overfull \hbox (2.75734pt too wide) in paragraph at lines 180--208
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--153
+Underfull \hbox (badness 10000) in paragraph at lines 180--208
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--153
+Underfull \hbox (badness 10000) in paragraph at lines 180--208
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--153
+Underfull \hbox (badness 10000) in paragraph at lines 180--208
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--153
+Underfull \hbox (badness 10000) in paragraph at lines 180--208
+
+ []
+
+[6]
+File: 登录_用例图.png Graphic file (type QTm)
+ <use  "登录_用例图.png" >
+File: 登录_类图.png Graphic file (type QTm)
+ <use  "登录_类图.png" >
+File: 登录_状态图.png Graphic file (type QTm)
+ <use  "登录_状态图.png" >
+File: 登录_顺序图.png Graphic file (type QTm)
+
+<use  "登录_顺序图.png" > [7]
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--160
+Underfull \hbox (badness 10000) in paragraph at lines 260--260
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--160
+Underfull \hbox (badness 10000) in paragraph at lines 244--269
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--160
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 155--160
-
- []
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 162--167
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 162--167
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 162--167
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 162--167
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--175
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--175
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--175
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--175
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--190
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 194--194
-
- []
-
-
-Overfull \hbox (2.75734pt too wide) in paragraph at lines 179--196
+Overfull \hbox (2.75734pt too wide) in paragraph at lines 244--269
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--196
+Underfull \hbox (badness 10000) in paragraph at lines 244--269
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--196
+Underfull \hbox (badness 10000) in paragraph at lines 244--269
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--196
+Underfull \hbox (badness 10000) in paragraph at lines 244--269
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--196
+Underfull \hbox (badness 10000) in paragraph at lines 244--269
+
+ []
+
+[8]
+File: 登出_用例图.png Graphic file (type QTm)
+ <use  "登出_用例图.png" >
+File: 登出_类图.png Graphic file (type QTm)
+ <use  "登出_类图.png" >
+File: 登出_状态图.png Graphic file (type QTm)
+ <use  "登出_状态图.png" >
+File: 登出_顺序图.png Graphic file (type QTm)
+
+<use  "登出_顺序图.png" > [9]
+Underfull \hbox (badness 10000) in paragraph at lines 316--316
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--209
+Underfull \hbox (badness 10000) in paragraph at lines 321--321
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--214
+Underfull \hbox (badness 10000) in paragraph at lines 304--333
 
  []
 
 
-Overfull \hbox (2.75734pt too wide) in paragraph at lines 198--216
+Overfull \hbox (2.75734pt too wide) in paragraph at lines 304--333
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--216
+Underfull \hbox (badness 10000) in paragraph at lines 304--333
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--216
+Underfull \hbox (badness 10000) in paragraph at lines 304--333
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--216
+Underfull \hbox (badness 10000) in paragraph at lines 304--333
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--216
+Underfull \hbox (badness 10000) in paragraph at lines 304--333
 
  []
 
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 229--229
+[10]
+File: 修改密码_用例图.png Graphic file (type QTm)
+ <use  "修改密码_用例图.png" >
+File: 修改密码_类图.png Graphic file (type QTm)
+ <use  "修改密码_类图.png" >
+File: 修改密码_状态图.png Graphic file (type QTm)
+ <use  "修改密码_状态图.png" >
+[11]
+File: 修改密码_顺序图.png Graphic file (type QTm)
+ <use  "修改密码_顺序图.png" >
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--234
+Underfull \hbox (badness 10000) in paragraph at lines 386--386
 
  []
 
 
-Overfull \hbox (2.75734pt too wide) in paragraph at lines 218--236
+Underfull \hbox (badness 10000) in paragraph at lines 369--398
+
+ []
+
+
+Overfull \hbox (2.75734pt too wide) in paragraph at lines 369--398
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--236
+Underfull \hbox (badness 10000) in paragraph at lines 369--398
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--236
+Underfull \hbox (badness 10000) in paragraph at lines 369--398
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--236
+Underfull \hbox (badness 10000) in paragraph at lines 369--398
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--236
+Underfull \hbox (badness 10000) in paragraph at lines 369--398
+
+ []
+
+[12]
+File: 修改用户信息_用例图.png Graphic file (type QTm)
+ <use  "修改用户信息_用例图.png" > [13]
+File: 修改用户信息_类图.png Graphic file (type QTm)
+ <use  "修改用户信息_类图.png" >
+File: 修改用户信息_状态图.png Graphic file (type QTm)
+
+<use  "修改用户信息_状态图.png" >
+File: 修改用户信息_顺序图.png Graphic file (type QTm)
+ <use  "修改用户信息_顺序图.png" > [14]
+Underfull \hbox (badness 10000) in paragraph at lines 460--460
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 464--464
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--269
+Underfull \hbox (badness 10000) in paragraph at lines 450--466
 
  []
 
 
-Overfull \hbox (2.75734pt too wide) in paragraph at lines 256--271
+Overfull \hbox (2.75734pt too wide) in paragraph at lines 450--466
 [] 
  []
 
-[6] [7] [8] (./booking.aux) ) 
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 484--484
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 487--487
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 491--491
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 473--504
+
+ []
+
+
+Overfull \hbox (2.75734pt too wide) in paragraph at lines 473--504
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 473--504
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 473--504
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 473--504
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 473--504
+
+ []
+
+[16]
+File: 普通用户添加信用卡类图.png Graphic file (type QTm)
+ <use  "普通用户添加信用卡类图.png" >
+File: 普通用户添加信用卡状态图.png Graphic file (type QTm)
+ <use  "普通用户添加信用卡状态图.png" > [17]
+File: 普通用户添加信用卡顺序图.png Graphic file (type QTm)
+
+<use  "普通用户添加信用卡顺序图.png" >
+Underfull \hbox (badness 10000) in paragraph at lines 547--547
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 551--551
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 554--554
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 537--574
+
+ []
+
+
+Overfull \hbox (2.75734pt too wide) in paragraph at lines 537--574
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 537--574
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 537--574
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 537--574
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 537--574
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 537--574
+
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 575--576
+
+ []
+
+File: 4.1类图.png Graphic file (type QTm)
+<use  "4.1类图.png" >
+File: 4.1状态图.png Graphic file (type QTm)
+ <use  "4.1状态图.png" >
+File: 4.1顺序图.png Graphic file (type QTm)
+ <use  "4.1顺序图.png" > [19]
+Underfull \hbox (badness 10000) in paragraph at lines 617--617
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 620--620
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 623--623
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 606--632
+
+ []
+
+
+Overfull \hbox (2.75734pt too wide) in paragraph at lines 606--632
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 606--632
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 606--632
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 606--632
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 606--632
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 633--634
+
+ []
+
+[20]
+File: 4.2类图.png Graphic file (type QTm)
+ <use  "4.2类图.png" >
+File: 4.2状态图.png Graphic file (type QTm)
+ <use  "4.2状态图.png" >
+File: 4.2顺序图.png Graphic file (type QTm)
+ <use  "4.2顺序图.png" > [21]
+Underfull \hbox (badness 10000) in paragraph at lines 675--675
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 678--678
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 681--681
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 663--692
+
+ []
+
+
+Overfull \hbox (2.75734pt too wide) in paragraph at lines 663--692
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 663--692
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 663--692
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 663--692
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 663--692
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 663--692
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 663--692
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 693--694
+
+ []
+
+[22]
+File: 4.3类图.png Graphic file (type QTm)
+ <use  "4.3类图.png" >
+File: 4.3状态图.png Graphic file (type QTm)
+ <use  "4.3状态图.png" >
+File: 4.3顺序图.png Graphic file (type QTm)
+ <use  "4.3顺序图.png" >
+Underfull \hbox (badness 10000) in paragraph at lines 734--734
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 737--737
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 740--740
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 723--753
+
+ []
+
+
+Overfull \hbox (2.75734pt too wide) in paragraph at lines 723--753
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 723--753
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 723--753
+
+ []
+
+
+Overfull \hbox (12.42838pt too wide) in paragraph at lines 723--753
+\TU/lmtt/m/n/10.95 Input: selected language(the language which the user selecte
+d), the language
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 723--753
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 723--753
+
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 754--755
+
+ []
+
+File: setting部分用例图.png Graphic file (type QTm)
+<use  "setting部分用例图.png" > [24]
+File: 选择语言类图.png Graphic file (type QTm)
+ <use  "选择语言类图.png" >
+File: 选择语言状态图.png Graphic file (type QTm)
+ <use  "选择语言状态图.png" >
+File: 选择语言顺序图.png Graphic file (type QTm)
+
+<use  "选择语言顺序图.png" >
+Underfull \hbox (badness 10000) in paragraph at lines 800--800
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 803--803
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 789--816
+
+ []
+
+
+Overfull \hbox (2.75734pt too wide) in paragraph at lines 789--816
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 789--816
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 789--816
+
+ []
+
+
+Overfull \hbox (12.42838pt too wide) in paragraph at lines 789--816
+\TU/lmtt/m/n/10.95 Input: selected theme(the theme which the user selected), th
+e theme set, the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 789--816
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 789--816
+
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 817--818
+
+ []
+
+File: setting部分用例图.png Graphic file (type QTm)
+<use  "setting部分用例图.png" >
+File: 选择主题类图.png Graphic file (type QTm)
+ <use  "选择主题类图.png" > [26]
+File: 选择主题状态图.png Graphic file (type QTm)
+ <use  "选择主题状态图.png" >
+File: 选择主题顺序图.png Graphic file (type QTm)
+
+<use  "选择主题顺序图.png" >
+Underfull \hbox (badness 10000) in paragraph at lines 863--863
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 866--866
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 870--870
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 851--881
+
+ []
+
+
+Overfull \hbox (2.75734pt too wide) in paragraph at lines 851--881
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 851--881
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 851--881
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 851--881
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 851--881
+
+ []
+
+[27]
+File: setting部分用例图.png Graphic file (type QTm)
+ <use  "setting部分用例图.png" >
+File: 选择货币类图.png Graphic file (type QTm)
+ <use  "选择货币类图.png" >
+File: 选择货币状态图.png Graphic file (type QTm)
+ <use  "选择货币状态图.png" >
+[28]
+File: 选择货币顺序图.png Graphic file (type QTm)
+ <use  "选择货币顺序图.png" >
+Underfull \hbox (badness 10000) in paragraph at lines 935--935
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 918--945
+
+ []
+
+
+Overfull \hbox (2.75734pt too wide) in paragraph at lines 918--945
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 918--945
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 918--945
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 918--945
+
+ []
+
+[29]
+File: 租车服务_用例图.png Graphic file (type QTm)
+ <use  "租车服务_用例图.png" >
+File: 租车服务_类图.png Graphic file (type QTm)
+ <use  "租车服务_类图.png" >
+File: 租车服务_状态图.png Graphic file (type QTm)
+ <use  "租车服务_状态图.png" >
+File: 租车服务_顺序图.png Graphic file (type QTm)
+
+<use  "租车服务_顺序图.png" > [30]
+Underfull \hbox (badness 10000) in paragraph at lines 989--989
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 980--1000
+
+ []
+
+
+Overfull \hbox (2.75734pt too wide) in paragraph at lines 980--1000
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 980--1000
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 980--1000
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 980--1000
+
+ []
+
+[31]
+File: 餐厅订位_用例图.png Graphic file (type QTm)
+ <use  "餐厅订位_用例图.png" >
+File: 餐厅订位_类图.png Graphic file (type QTm)
+ <use  "餐厅订位_类图.png" >
+File: 餐厅订位_状态图.png Graphic file (type QTm)
+ <use  "餐厅订位_状态图.png" >
+File: 餐厅订位_顺序图.png Graphic file (type QTm)
+
+<use  "餐厅订位_顺序图.png" > [32] [33] (./booking.aux) ) 
 Here is how much of TeX's memory you used:
- 19502 strings out of 493005
- 403418 string characters out of 6134595
- 431929 words of memory out of 5000000
- 23341 multiletter control sequences out of 15000+600000
- 6637 words of font info for 43 fonts, out of 8000000 for 9000
+ 19656 strings out of 493005
+ 406629 string characters out of 6134595
+ 430929 words of memory out of 5000000
+ 23434 multiletter control sequences out of 15000+600000
+ 6653 words of font info for 45 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 52i,11n,67p,10434b,314s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,10n,67p,10434b,340s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on booking.pdf (11 pages).
+Output written on booking.pdf (35 pages).
